@@ -358,6 +358,166 @@ body {
   transform: translateY(-2px);
 }
 
+
+/* Seção Contato */
+.contato-section {
+  min-height: 100vh;
+  padding: var(--espacamento-xl) var(--espacamento-lg);
+  background: linear-gradient(135deg, var(--cor-fundo-claro) 0%, var(--cor-branco) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-container {
+  max-width: var(--largura-maxima-container);
+  width: 100%;
+  text-align: center;
+}
+
+.contato-titulo {
+  font-size: var(--tamanho-fonte-titulo);
+  color: var(--cor-texto-principal);
+  margin-bottom: var(--espacamento-md);
+  position: relative;
+}
+
+.contato-titulo::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--cor-primaria);
+}
+
+.contato-subtitulo {
+  font-size: var(--tamanho-fonte-grande);
+  color: var(--cor-texto-secundario);
+  margin-bottom: var(--espacamento-xl);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--espacamento-lg);
+  margin-top: var(--espacamento-xl);
+}
+
+/* Cards de Contato */
+.contato-card {
+  background: var(--cor-branco);
+  border-radius: var(--border-radius-sm);
+  padding: var(--espacamento-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transicao-rapida);
+  box-shadow: var(--sombra-card);
+  border: 1px solid var(--cor-gelo);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contato-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--cor-primaria), transparent);
+  transition: left 0.5s ease;
+}
+
+.contato-card:hover::before {
+  left: 100%;
+}
+
+.contato-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contato-icone {
+  font-size: 3rem;
+  margin-bottom: var(--espacamento-md);
+  transition: transform var(--transicao-rapida);
+}
+
+.contato-card:hover .contato-icone {
+  transform: scale(1.1);
+}
+
+.contato-tipo {
+  font-size: var(--tamanho-fonte-sub-titulo);
+  color: var(--cor-texto-principal);
+  font-weight: var(--peso-fonte-bold);
+  margin-bottom: var(--espacamento-xs);
+}
+
+.contato-info {
+  color: var(--cor-texto-secundario);
+  font-size: var(--tamanho-fonte-base);
+  margin-bottom: var(--espacamento-md);
+  word-break: break-word;
+}
+
+.contato-acao {
+  color: var(--cor-primaria);
+  font-weight: var(--peso-fonte-medio);
+  font-size: var(--tamanho-fonte-reduzido);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all var(--transicao-rapida);
+}
+
+.contato-card:hover .contato-acao {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cores específicas para cada tipo de contato */
+.contato-card.whatsapp:hover {
+  border-color: #25D366;
+}
+
+.contato-card.whatsapp:hover .contato-tipo {
+  color: #25D366;
+}
+
+.contato-card.email:hover {
+  border-color: #EA4335;
+}
+
+.contato-card.email:hover .contato-tipo {
+  color: #EA4335;
+}
+
+.contato-card.linkedin:hover {
+  border-color: #0077B5;
+}
+
+.contato-card.linkedin:hover .contato-tipo {
+  color: #0077B5;
+}
+
+.contato-card.lattes:hover {
+  border-color: #FF6B35;
+}
+
+.contato-card.lattes:hover .contato-tipo {
+  color: #FF6B35;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   body {
@@ -419,6 +579,19 @@ body {
   .btn {
     flex: none;
   }
+
+  .contato-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--espacamento-md);
+  }
+  
+  .contato-card {
+    padding: var(--espacamento-md);
+  }
+  
+  .contato-icone {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -450,5 +623,21 @@ body {
 
   .projetos-titulo {
     font-size: var(--tamanho-fonte-titulo-480px);
+  }
+
+  .contato-section {
+    padding: var(--espacamento-lg) var(--espacamento-sm);
+  }
+  
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contato-titulo {
+    font-size: var(--tamanho-fonte-titulo-480px);
+  }
+  
+  .contato-subtitulo {
+    font-size: var(--tamanho-fonte-base);
   }
 }
