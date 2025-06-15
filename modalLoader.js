@@ -49,8 +49,8 @@ class ModalLoader {
         });
 
         //  Controles do carrossel
-        const btnPrev = document.querySelector('.carousel-prev');
-        const btnNext = document.querySelector('.carousel-next');
+        const btnPrev = document.getElementById('carousel-prev');
+        const btnNext = document.getElementById('carousel-next');
 
         if(btnPrev) btnPrev.addEventListener('click', () => this.previousImage());
         if(btnNext) btnNext.addEventListener('click', () => this.nextImage());
@@ -193,18 +193,21 @@ class ModalLoader {
     }
     
     isVisible() {
-        return this.modalElement && this.modalElement.style.display === 'block';
+        // return this.modalElement && this.modalElement.style.display === 'block';
+        return this.modalElement && this.modalElement.classList.contains('active');
     }
 
     show() {
         if (this.modalElement) {
-            this.modalElement.style.display = 'block';
+            this.modalElement.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
     }
 
     hide() {
         if (this.modalElement) {
-            this.modalElement.style.display = 'none';
+            this.modalElement.classList.remove('active');
+            document.body.style.overflow = '';
         }
     }
 }
