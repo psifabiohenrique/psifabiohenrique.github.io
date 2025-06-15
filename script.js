@@ -1,11 +1,10 @@
-
 // Array com os dados dos projetos
 const projects = [
   {
     id: 1,
     title: "Portfólio Pessoal",
-    descricao: "Site pessoal desenvolvido para apresentar meus projetos e habilidades, com design responsivo e moderno focado na experiência do usuário.",
-    descricaoDetalhada: `
+    description: "Site pessoal desenvolvido para apresentar meus projetos e habilidades, com design responsivo e moderno focado na experiência do usuário.",
+    detailedDescription: `
         <p>Este portfólio foi desenvolvido com foco na experiência do usuário e design responsivo. O projeto demonstra minhas habilidades em desenvolvimento front-end e design de interfaces.</p>
         <h4>Características principais:</h4>
         <ul>
@@ -22,26 +21,26 @@ const projects = [
             <li>Otimização de carregamento de recursos</li>
         </ul>
     `,
-    tecnologias: [
-      { nome: "HTML", icone: "🌐" },
-      { nome: "CSS", icone: "🎨" },
-      { nome: "JavaScript", icone: "⚡" },
-      { nome: "Responsive", icone: "📱" }
+    technologies: [
+      { name: "HTML", icon: "🌐" },
+      { name: "CSS", icon: "🎨" },
+      { name: "JavaScript", icon: "⚡" },
+      { name: "Responsive", icon: "📱" }
     ],
-    imagens: [
+    images: [
       "images/portfolio-1.jpg",
       "images/portfolio-2.jpg",
       "images/portfolio-3.jpg"
     ],
-    linkDemo: "https://psifabiohenrique.github.io",
-    linkCodigo: "https://github.com/psifabiohenrique/psifabiohenrique.github.io",
-    tipoLink: "demo" // "demo" ou "download"
+    demoLink: "https://psifabiohenrique.github.io",
+    codeLink: "https://github.com/psifabiohenrique/psifabiohenrique.github.io",
+    linkType: "demo" // "demo" ou "download"
   },
   {
     id: 2,
     title: "Sistema de Tarefas",
-    descricao: "Aplicação web para gerenciamento de tarefas com interface intuitiva, permitindo criar, editar e organizar atividades do dia a dia.",
-    descricaoDetalhada: `
+    description: "Aplicação web para gerenciamento de tarefas com interface intuitiva, permitindo criar, editar e organizar atividades do dia a dia.",
+    detailedDescription: `
         <p>Sistema completo de gerenciamento de tarefas desenvolvido com stack MERN, oferecendo uma experiência fluida para organização pessoal e profissional.</p>
         <h4>Funcionalidades:</h4>
         <ul>
@@ -50,99 +49,101 @@ const projects = [
             <li>Filtros avançados e busca</li>
             <li>Dashboard com estatísticas</li>
             <li>Notificações e lembretes</li>
+            <li>Sincronização em tempo real</li>
         </ul>
         <h4>Tecnologias utilizadas:</h4>
         <ul>
-            <li>Frontend: React com hooks e context API</li>
+            <li>Frontend: React.js com hooks e context API</li>
             <li>Backend: Node.js com Express</li>
-            <li>Banco de dados: MongoDB com Mongoose</li>
+            <li>Banco de dados: MongoDB</li>
             <li>Autenticação: JWT</li>
         </ul>
     `,
-    tecnologias: [
-      { nome: "React", icone: "⚛️" },
-      { nome: "Node.js", icone: "🟢" },
-      { nome: "MongoDB", icone: "🗄️" },
-      { nome: "Express", icone: "🚀" }
+    technologies: [
+      { name: "React", icon: "⚛️" },
+      { name: "Node.js", icon: "🟢" },
+      { name: "MongoDB", icon: "🍃" },
+      { name: "Express", icon: "🚀" }
     ],
-    imagens: [
-      "images/tarefas-1.jpg",
-      "images/tarefas-2.jpg",
-      "images/tarefas-3.jpg",
-      "images/tarefas-4.jpg"
+    images: [
+      "images/tasks-1.jpg",
+      "images/tasks-2.jpg",
+      "images/tasks-3.jpg"
     ],
-    linkDemo: "#",
-    linkCodigo: "#",
-    tipoLink: "demo"
+    demoLink: "#",
+    codeLink: "#",
+    linkType: "demo"
   },
   {
     id: 3,
     title: "E-commerce Landing",
-    descricao: "Landing page moderna para e-commerce com animações suaves, design responsivo e otimizada para conversão de vendas.",
-    descricaoDetalhada: `
-        <p>Landing page desenvolvida com foco em conversão e experiência do usuário, utilizando as melhores práticas de design e desenvolvimento web.</p>
+    description: "Landing page moderna para e-commerce com animações suaves, design responsivo e otimizada para conversão de vendas.",
+    detailedDescription: `
+        <p>Landing page desenvolvida com foco em conversão e experiência do usuário, utilizando as melhores práticas de UX/UI design e otimização para motores de busca.</p>
         <h4>Características:</h4>
         <ul>
-            <li>Design moderno e atrativo</li>
-            <li>Animações CSS e JavaScript</li>
-            <li>Formulários otimizados</li>
-            <li>Integração com analytics</li>
-            <li>Otimizada para SEO</li>
+            <li>Design responsivo e mobile-first</li>
+            <li>Animações CSS3 e JavaScript</li>
+            <li>Otimização SEO completa</li>
+            <li>Formulários de contato integrados</li>
+            <li>Carregamento otimizado de imagens</li>
+            <li>Analytics e tracking de conversão</li>
         </ul>
-        <h4>Métricas de performance:</h4>
+        <h4>Performance:</h4>
         <ul>
-            <li>Tempo de carregamento: < 2 segundos</li>
-            <li>Score de acessibilidade: 95+</li>
-            <li>Compatibilidade: 99% dos navegadores</li>
+            <li>Score 95+ no Google PageSpeed</li>
+            <li>Tempo de carregamento < 2s</li>
+            <li>Otimizada para Core Web Vitals</li>
         </ul>
     `,
-    tecnologias: [
-      { nome: "HTML", icone: "🌐" },
-      { nome: "SASS", icone: "🎨" },
-      { nome: "JavaScript", icone: "⚡" },
-      { nome: "Bootstrap", icone: "🅱️" }
+    technologies: [
+      { name: "HTML5", icon: "🌐" },
+      { name: "CSS3", icon: "🎨" },
+      { name: "JavaScript", icon: "⚡" },
+      { name: "SASS", icon: "💎" }
     ],
-    imagens: [
+    images: [
       "images/ecommerce-1.jpg",
-      "images/ecommerce-2.jpg"
+      "images/ecommerce-2.jpg",
+      "images/ecommerce-3.jpg"
     ],
-    linkDemo: "#",
-    linkCodigo: "#",
-    tipoLink: "demo"
+    demoLink: "#",
+    codeLink: "#",
+    linkType: "demo"
   }
 ];
 
 // Função para criar um card de projeto
-function criarCardProjeto(projeto) {
+function createProjectCard(project) {
   return `
-      <div class="projeto-card" data-projeto-id="${projeto.id}">
+      <div class="projeto-card" data-projeto-id="${project.id}">
         <div class="projeto-header">
-          <h3 class="projeto-titulo">${projeto.titulo}</h3>
+          <h3 class="projeto-titulo">${project.title}</h3>
         </div>
         
         <div class="projeto-conteudo">
-          <p class="projeto-descricao">${projeto.descricao}</p>
+          <p class="projeto-descricao">${project.description}</p>
           
           <div class="projeto-tecnologias">
-            ${projeto.tecnologias.map(tech => `
+            ${project.technologies.map(tech => `
               <span class="tech-tag">
-                <i class="tech-icon">${tech.icone}</i>
-                ${tech.nome}
+                <i class="tech-icon">${tech.icon}</i>
+                ${tech.name}
               </span>
             `).join('')}
           </div>
         </div>
         
         <div class="projeto-acoes">
-          <button class="btn btn-secundario" onclick="verMais(${projeto.id})">Ver Mais</button>
-          <a href="${projeto.linkDemo}" target="_blank" class="btn btn-primario">Live Demo</a>
+          <button class="btn btn-secundario" onclick="viewMore(${project.id})">Ver Mais</button>
+          <a href="${project.demoLink}" target="_blank" class="btn btn-primario">Live Demo</a>
         </div>
       </div>
     `;
 }
 
 // Função para renderizar todos os projetos
-function renderizarProjetos() {
+function renderProjects() {
   const container = document.querySelector('.projetos-grid');
 
   if (!container) {
@@ -154,30 +155,29 @@ function renderizarProjetos() {
   container.innerHTML = '';
 
   // Adiciona cada projeto
-  projetos.forEach(projeto => {
-    container.innerHTML += criarCardProjeto(projeto);
+  projects.forEach(project => {
+    container.innerHTML += createProjectCard(project);
   });
 }
 
 // Função para o botão "Ver Mais"
-function verMais(projetoId) {
-  const projeto = projetos.find(p => p.id === projetoId);
+function viewMore(projectId) {
+  const project = projects.find(p => p.id === projectId);
 
-  if (projeto) {
-    // Você pode implementar um modal, redirecionamento, etc.
+  if (project) {
     const modalLoader = new ModalLoader();
-    modalLoader.initialize('teste');
+    modalLoader.showProject(projectId);
   }
 }
 
 // Função para mostrar todos os projetos
-function mostrarTodos() {
-  renderizarProjetos();
+function showAll() {
+  renderProjects();
 }
 
 // Inicialização quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', function () {
-  renderizarProjetos();
+  renderProjects();
 
   // Adiciona animação de entrada nos cards
   setTimeout(() => {
@@ -198,5 +198,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Exporta funções para uso global (opcional)
-window.mostrarTodos = mostrarTodos;
-window.verMais = verMais;
+window.showAll = showAll;
+window.viewMore = viewMore;
