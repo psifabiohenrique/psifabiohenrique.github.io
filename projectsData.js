@@ -1,10 +1,11 @@
 // Array com os dados dos projetos
 const projects = [
-    {
-      id: 1,
-      title: "Portfólio Pessoal",
-      description: "Site pessoal desenvolvido para apresentar meus projetos e habilidades, com design responsivo e moderno focado na experiência do usuário.",
-      detailedDescription: `
+  {
+    id: 3,
+    title: "Portfólio Pessoal",
+    description:
+      "Site pessoal desenvolvido para apresentar meus projetos e habilidades, com design responsivo e moderno focado na experiência do usuário.",
+    detailedDescription: `
           <p>Este portfólio foi desenvolvido com foco na experiência do usuário e design responsivo. O projeto demonstra minhas habilidades em desenvolvimento front-end e design de interfaces.</p>
           <h4>Características principais:</h4>
           <ul>
@@ -21,67 +22,70 @@ const projects = [
               <li>Otimização de carregamento de recursos</li>
           </ul>
       `,
-      technologies: [
-        { name: "HTML", icon: "🌐" },
-        { name: "CSS", icon: "🎨" },
-        { name: "JavaScript", icon: "⚡" },
-        { name: "Responsive", icon: "📱" }
-      ],
-      images: [
-        "images/portifolio/image.png",
-        "images/portifolio/image2.png",
-        "images/portifolio/image3.png",
-        // "images/portfolio-1.jpg",
-        // "images/portfolio-2.jpg",
-        // "images/portfolio-3.jpg"
-      ],
-      demoLink: "https://psifabiohenrique.github.io",
-      codeLink: "https://github.com/psifabiohenrique/psifabiohenrique.github.io",
-      linkType: "demo" // "demo" ou "download"
-    },
-    {
-      id: 2,
-      title: "Sistema de Tarefas",
-      description: "Aplicação web para gerenciamento de tarefas com interface intuitiva, permitindo criar, editar e organizar atividades do dia a dia.",
-      detailedDescription: `
-          <p>Sistema completo de gerenciamento de tarefas desenvolvido com stack MERN, oferecendo uma experiência fluida para organização pessoal e profissional.</p>
-          <h4>Funcionalidades:</h4>
+    technologies: [
+      { name: "HTML", icon: "🌐" },
+      { name: "CSS", icon: "🎨" },
+      { name: "JavaScript", icon: "⚡" },
+      { name: "Responsive", icon: "📱" },
+    ],
+    images: [
+      "images/portifolio/image.png",
+      "images/portifolio/image2.png",
+      "images/portifolio/image3.png",
+    ],
+    demoLink: "https://psifabiohenrique.github.io",
+    codeLink: "https://github.com/psifabiohenrique/psifabiohenrique.github.io",
+    linkType: "demo", // "demo" ou "download"
+  },
+  {
+    id: 1,
+    title: "Notícias da Pároquia",
+    description:
+      "Aplicação web com multitenency para gerenciamento de site institucionais com gerenciamento de notícia para igrejas.",
+    detailedDescription: `
+          <p>Sistema completo de gerenciamento de notícias desenvolvido com django, HTML, CSS e javascript, oferecendo uma experiência fluida para várias instituições religiosas devido ao multitenancy implementado, possibilitando que várias paróquias utilizem um mesmo backend para gerir suas informações institucionais e suas notícias/atualizações.</p>
+          <h4>Funcionalidades:</h4> Continuar Daqui
           <ul>
-              <li>Criação, edição e exclusão de tarefas</li>
-              <li>Sistema de categorias e tags</li>
-              <li>Filtros avançados e busca</li>
-              <li>Dashboard com estatísticas</li>
-              <li>Notificações e lembretes</li>
-              <li>Sincronização em tempo real</li>
+            <li>Criação, edição e exclusão igrejas, padres e notícias de cada igreja</li>
+            <li>Multitenancy das igrejas, com acesso ao backend (crud) separado</li>
+            <li>Sistema de categorias</li>
+            <li>Filtros avançados e busca</li>
+            <li>Carrosel de notícias em destaque</li>
+            <li>Dashboard com acesso ao catálogo de igrejas e padres cadastrados</li>
           </ul>
           <h4>Tecnologias utilizadas:</h4>
           <ul>
-              <li>Frontend: React.js com hooks e context API</li>
-              <li>Backend: Node.js com Express</li>
-              <li>Banco de dados: MongoDB</li>
-              <li>Autenticação: JWT</li>
+              <li>Frontend: HTML, CSS, JavaScript, Django templates</li>
+              <li>Backend: Django</li>
+              <li>Banco de dados: PostgreSQL</li>
+              <li>Conteinerização: Docker</li>
           </ul>
       `,
-      technologies: [
-        { name: "React", icon: "⚛️" },
-        { name: "Node.js", icon: "🟢" },
-        { name: "MongoDB", icon: "🍃" },
-        { name: "Express", icon: "🚀" }
-      ],
-      images: [
-        // "images/tasks-1.jpg",
-        // "images/tasks-2.jpg",
-        // "images/tasks-3.jpg"
-      ],
-      demoLink: "#",
-      codeLink: "#",
-      linkType: "demo"
-    },
-    {
-      id: 3,
-      title: "E-commerce Landing",
-      description: "Landing page moderna para e-commerce com animações suaves, design responsivo e otimizada para conversão de vendas.",
-      detailedDescription: `
+    technologies: [
+      { name: "HTML", icon: "🌐" },
+      { name: "CSS", icon: "🎨" },
+      { name: "JavaScript", icon: "⚡" },
+      { name: "Python", icon: "🐍" },
+      { name: "Django", icon: "🎯" },
+      { name: "Docker", icon: "🐳" },
+      { name: "PostgreSQL", icon: "🐘" },
+    ],
+    images: [
+      "images/paroquia-news/image1.png",
+      "images/paroquia-news/image2.png",
+      "images/paroquia-news/image3.png",
+      "images/paroquia-news/image4.png",
+    ],
+    demoLink: "https://paroquia-news.fly.dev/",
+    codeLink: "https://github.com/psifabiohenrique/parish_news",
+    linkType: "demo",
+  },
+  {
+    id: 3,
+    title: "E-commerce Landing",
+    description:
+      "Landing page moderna para e-commerce com animações suaves, design responsivo e otimizada para conversão de vendas.",
+    detailedDescription: `
           <p>Landing page desenvolvida com foco em conversão e experiência do usuário, utilizando as melhores práticas de UX/UI design e otimização para motores de busca.</p>
           <h4>Características:</h4>
           <ul>
@@ -99,21 +103,21 @@ const projects = [
               <li>Otimizada para Core Web Vitals</li>
           </ul>
       `,
-      technologies: [
-        { name: "HTML5", icon: "🌐" },
-        { name: "CSS3", icon: "🎨" },
-        { name: "JavaScript", icon: "⚡" },
-        { name: "SASS", icon: "💎" }
-      ],
-      images: [
-        // "images/ecommerce-1.jpg",
-        // "images/ecommerce-2.jpg",
-        // "images/ecommerce-3.jpg"
-      ],
-      demoLink: "#",
-      codeLink: "#",
-      linkType: "demo"
-    }
-  ];
+    technologies: [
+      { name: "HTML5", icon: "🌐" },
+      { name: "CSS3", icon: "🎨" },
+      { name: "JavaScript", icon: "⚡" },
+      { name: "SASS", icon: "💎" },
+    ],
+    images: [
+      // "images/ecommerce-1.jpg",
+      // "images/ecommerce-2.jpg",
+      // "images/ecommerce-3.jpg"
+    ],
+    demoLink: "#",
+    codeLink: "#",
+    linkType: "demo",
+  },
+];
 
 window.projects = projects;
