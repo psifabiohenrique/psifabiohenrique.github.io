@@ -44,12 +44,13 @@ const projects = [
       "Aplicação web com multitenency para gerenciamento de site institucionais com gerenciamento de notícia para igrejas.",
     detailedDescription: `
           <p>Sistema completo de gerenciamento de notícias desenvolvido com django, HTML, CSS e javascript, oferecendo uma experiência fluida para várias instituições religiosas devido ao multitenancy implementado, possibilitando que várias paróquias utilizem um mesmo backend para gerir suas informações institucionais e suas notícias/atualizações.</p>
-          <h4>Funcionalidades:</h4> Continuar Daqui
+          <h4>Funcionalidades:</h4>
           <ul>
-            <li>Criação, edição e exclusão igrejas, padres e notícias de cada igreja</li>
+            <li>Criação, edição e exclusão de igrejas, padres e notícias de cada igreja</li>
             <li>Multitenancy das igrejas, com acesso ao backend (crud) separado</li>
             <li>Sistema de categorias</li>
             <li>Filtros avançados e busca</li>
+            <li>Design responsivo e mobile-first</li>
             <li>Carrosel de notícias em destaque</li>
             <li>Dashboard com acesso ao catálogo de igrejas e padres cadastrados</li>
           </ul>
@@ -78,44 +79,6 @@ const projects = [
     ],
     demoLink: "https://paroquia-news.fly.dev/",
     codeLink: "https://github.com/psifabiohenrique/parish_news",
-    linkType: "demo",
-  },
-  {
-    id: 3,
-    title: "E-commerce Landing",
-    description:
-      "Landing page moderna para e-commerce com animações suaves, design responsivo e otimizada para conversão de vendas.",
-    detailedDescription: `
-          <p>Landing page desenvolvida com foco em conversão e experiência do usuário, utilizando as melhores práticas de UX/UI design e otimização para motores de busca.</p>
-          <h4>Características:</h4>
-          <ul>
-              <li>Design responsivo e mobile-first</li>
-              <li>Animações CSS3 e JavaScript</li>
-              <li>Otimização SEO completa</li>
-              <li>Formulários de contato integrados</li>
-              <li>Carregamento otimizado de imagens</li>
-              <li>Analytics e tracking de conversão</li>
-          </ul>
-          <h4>Performance:</h4>
-          <ul>
-              <li>Score 95+ no Google PageSpeed</li>
-              <li>Tempo de carregamento < 2s</li>
-              <li>Otimizada para Core Web Vitals</li>
-          </ul>
-      `,
-    technologies: [
-      { name: "HTML5", icon: "🌐" },
-      { name: "CSS3", icon: "🎨" },
-      { name: "JavaScript", icon: "⚡" },
-      { name: "SASS", icon: "💎" },
-    ],
-    images: [
-      // "images/ecommerce-1.jpg",
-      // "images/ecommerce-2.jpg",
-      // "images/ecommerce-3.jpg"
-    ],
-    demoLink: "#",
-    codeLink: "#",
     linkType: "demo",
   },
 ];
