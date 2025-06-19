@@ -21,7 +21,7 @@ function createProjectCard(project) {
         
         <div class="projeto-acoes">
           <button class="btn btn-secundario" onclick="viewMore(${project.id})">Ver Mais</button>
-          <a href="${project.demoLink}" target="_blank" class="btn btn-primario">Live Demo</a>
+          <a href="${project.demoLink}" target="_blank" class="btn btn-primario">${project.linkType.toUpperCase()}</a>
         </div>
       </div>
     `;
@@ -40,7 +40,7 @@ function renderProjects() {
   container.innerHTML = '';
 
   // Adiciona cada projeto
-  projects.forEach(project => {
+  projects.sort((a, b) => a.id - b.id).forEach(project => {
     container.innerHTML += createProjectCard(project);
   });
 }

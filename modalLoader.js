@@ -112,6 +112,10 @@ class ModalLoader {
         if(btnDemo && project.demoLink) {
             btnDemo.href = project.demoLink;
         }
+
+        if (project.linkType === "download") {
+            btnDemo.innerText = "Download";
+        }
         
         if(btnCode && project.codeLink) {
             btnCode.href = project.codeLink;
