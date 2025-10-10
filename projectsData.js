@@ -2,7 +2,49 @@
 // Array com os dados dos projetos
 const projects = [
   {
-    id: 3,
+    id: 1,
+    title: "Psi Assist AI",
+    description:
+      "Aplicação web para automatização da criação de prontuários e relatórios psicológicos, através do uso de IA.",
+    detailedDescription: `
+    <p>Aplicação construída com django, executa um servidor local, para garantir maior privacidade dos dados psicológicos registrados. Ela permite gravar o áudio dos atendimentos psicológicos e utiliza a API do Google GEMINI para produzir um registro de prontuário para cada atendimento e atualizar informações gerais que são utilizadas na construção de relatórios psicológicos. Além disso, a aplicação possui um CRUD completo de pacientes e prontuários.</p>
+    <h4>Funcionalidades:</h4>
+    <ul>
+    <li>Criação, edição e exclusão de pacientes</li>
+    <li>Criação, edição e exclusão de prontuários psicológicos</li>
+    <li>Criação de prontuários psicológicos automatizados com IA</li>
+    <li>Registro incremental e automatizado com IA, de informações relavantes para relatórios psicológicos</li>
+    <li>Sistema de registro de áudio do atendimento</li>
+    <li>Empacotamento e distribuição do servidor para execução local</li>
+    <li>Design atraente, feito com os templates do django e tailwindcss</li>
+    </ul>
+    <h4>Tecnologias utilizadas:</h4>
+    <ul>
+    <li>Frontend: HTML, CSS, JavaScript, tailwind, Django templates</li>
+    <li>Backend: Django</li>
+    </ul>
+    `,
+    technologies: [
+      { name: "HTML", icon: "🌐" },
+      { name: "CSS", icon: "🎨" },
+      { name: "Tailwindcss", icon: "🔩" },
+      { name: "JavaScript", icon: "⚡" },
+      { name: "AudioContext - JS", icon: "🎤" },
+      { name: "Python", icon: "🐍" },
+      { name: "Django", icon: "🎯" },
+      { name: "GEMINI", icon: "🤖" },
+    ],
+    images: [
+      "images/psi-assist/image1.png",
+      "images/psi-assist/image2.png",
+      "images/psi-assist/image3.png",
+    ],
+    demoLink: "https://github.com/psifabiohenrique/psi-assist-backend/releases",
+    codeLink: "https://github.com/psifabiohenrique/psi-assist-backend",
+    linkType: "download",
+  },
+  {
+    id: 4,
     title: "Portfólio Pessoal",
     description:
       "Site pessoal desenvolvido para apresentar meus projetos e habilidades, com design responsivo e moderno focado na experiência do usuário.",
@@ -39,7 +81,7 @@ const projects = [
     linkType: "demo", // "demo" ou "download"
   },
   {
-    id: 1,
+    id: 2,
     title: "Notícias da Paróquia",
     description:
       "Aplicação web com multitenancy para gerenciamento de sites institucionais com gerenciamento de notícias para igrejas.",
@@ -83,7 +125,7 @@ const projects = [
     linkType: "demo",
   },
   {
-    id: 2,
+    id: 3,
     title: "Experimento Desconto de Atraso",
     description:
       "Programa para pesquisadores realizarem estudos sobre o fenômeno de desconto de atraso e de demanda (temas dentro da economia comportamental).",
@@ -121,7 +163,7 @@ const projects = [
       "images/desconto-atraso/image5.png",
       "images/desconto-atraso/image6.png",
     ],
-    demoLink: "https://github.com/psifabiohenrique/DelayDiscounting2/releases/tag/2.0.2",
+    demoLink: "https://github.com/psifabiohenrique/DelayDiscounting2/releases",
     codeLink: "https://github.com/psifabiohenrique/DelayDiscounting2",
     linkType: "download",
   },
